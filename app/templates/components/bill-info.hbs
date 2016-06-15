@@ -1,0 +1,10 @@
+
+
+<h2>{{bill.official_title}}</h2>
+
+
+{{#if infoSelected}}
+  <h5 {{action "hideInfo"}}> {{bill.bill_type}}</h5>
+{{else}}
+  <button {{action "selectMoreInfo"}}>More Info</button>
+{{/if}}
