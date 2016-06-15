@@ -6,7 +6,7 @@ export default Ember.Route.extend({
       this.transitionTo('results', params.zip);
     },
     showBillList(params) {
-      this.transitionTo('billsearch', params.bill-list)
+      this.transitionTo('bill-search-results', params.bill);
     }
   }
 });

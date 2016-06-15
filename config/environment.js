@@ -20,6 +20,10 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+
+    ENV.myApiKey = process.env.apiKey;
+    console.log("apiKey: " + process.env.apiKey);
+
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
